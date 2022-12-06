@@ -48,7 +48,7 @@ pub fn day_2() -> Result<(), Box<dyn Error>> {
             .unwrap();
         let score_part_1 = outcome_map.get(&outcome).unwrap();
         let score_part_2 = move_map.get(&score_part_2_1).unwrap();
-        score += (score_part_1 + score_part_2)
+        score += score_part_1 + score_part_2
     }
     // Part 2:
     println!("Day 2, part 2: {}", score);
